@@ -22,7 +22,7 @@ public class Stack<Item> {
     private Item[] StackBuffer;                    //Buffer principal (vetor fixo da pilha).
     
     /**
-    * @see Construtor principal com o tamanho padrão da pilha (16 elementos).
+    * Construtor principal com o tamanho padrão da pilha (16 elementos).
     */
     public Stack(){
         this.StackSize = STACK_MIN_SIZE;

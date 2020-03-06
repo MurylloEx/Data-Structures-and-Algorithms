@@ -12,20 +12,58 @@ package Exercise_1;
 public class EntryPoint {
     
     public static void main(String[] args) {
-        Queue<String> pilha = new Queue<>(32);
+       
+        System.out.println("\n\nCriando pilha com elementos:\nTESTE A\nTESTE B\nTESTE C");
         
-        pilha.enqueue("Teste A");
-        pilha.enqueue("Teste B");
+        Stack<String> pilha = new Stack<>(3); //Criando a pilha de 3 elementos.
         
-        System.out.println(pilha.dequeue());
+        pilha.push("TESTE A"); //Adicionando elemento TESTE A ao final da pilha.
+        pilha.push("TESTE B"); //Adicionando elemento TESTE B ao final da pilha.
         
-        pilha.enqueue("Teste C");
+        System.out.println("Item removido:" + pilha.pop()); //Removendo o elemento TESTE B.
         
-        System.out.println(pilha.dequeue());
-        System.out.println(pilha.dequeue());
+        pilha.push("TESTE C"); //Adicionando elemento TESTE C ao final da pilha.
         
-        //Deve gerar uma exceção nessa linha abaixo!
-        System.out.println(pilha.dequeue());
+        System.out.println("Item removido:" + pilha.pop()); //Removendo o elemento TESTE C.
+        System.out.println("Item removido:" + pilha.pop()); //Removendo o elemento TESTE A.
+        
+        
+        //-----------------------------------------------------------
+        
+        
+        System.out.println("\n\nCriando fila com elementos:\nTESTE A\nTESTE B\nTESTE C\nTESTE D\nTESTE E");
+        
+        Queue<String> fila = new Queue<>(5); //Criando a fila de 5 elementos.
+        
+        fila.enqueue("TESTE A"); //Adicionando elemento TESTE A ao final da fila.
+        fila.enqueue("TESTE B"); //Adicionando elemento TESTE B ao final da fila.
+        fila.enqueue("TESTE C"); //Adicionando elemento TESTE C ao final da fila.
+        fila.enqueue("TESTE D"); //Adicionando elemento TESTE D ao final da fila.
+        fila.enqueue("TESTE E"); //Adicionando elemento TESTE E ao final da fila.
+        
+        System.out.println("Item removido:" + fila.dequeue()); //Removendo o elemento TESTE A.
+        System.out.println("Item removido:" + fila.dequeue()); //Removendo o elemento TESTE B.
+        System.out.println("Item removido:" + fila.dequeue()); //Removendo o elemento TESTE C.
+        
+        
+        //-----------------------------------------------------------
+        
+        
+        System.out.println("\n\nCriando lista encadeada com elementos:\nTESTE A\nTESTE B\nTESTE C\nTESTE D\nTESTE E");
+        
+        LinkedList<String> lista = new LinkedList<>();//Criando a lista encadeada (também chamada de lista ligada).
+        
+        lista.add("TESTE A"); //Adicionando elemento TESTE A ao final da lista.
+        lista.add("TESTE B"); //Adicionando elemento TESTE B ao final da lista.
+        lista.add("TESTE C"); //Adicionando elemento TESTE C ao final da lista.
+        lista.add("TESTE D"); //Adicionando elemento TESTE D ao final da lista.
+        lista.add("TESTE E"); //Adicionando elemento TESTE E ao final da lista.
+        
+        System.out.println("Item removido: " + lista.remove(4)); //Removendo o elemento TESTE E
+        System.out.println("Item removido: " + lista.remove(0)); //Removendo o elemento TESTE A
+        System.out.println("Item removido: " + lista.remove(2)); //Removendo o elemento TESTE C
+        
+        
     }
     
 }
