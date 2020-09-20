@@ -1,4 +1,4 @@
-
+# -*- coding: utf-8 -*-
 def bin_search_find(srcList, id):
     if len(srcList) > 1:
         middle = len(srcList) // 2

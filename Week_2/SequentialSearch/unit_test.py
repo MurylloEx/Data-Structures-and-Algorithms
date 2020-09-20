@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 from seq_search_engine import seq_search_find
 from seq_search_obj import ListObject
 
